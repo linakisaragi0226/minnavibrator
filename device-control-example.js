@@ -137,7 +137,7 @@ async function runDeviceControlExample() {
           setTimeout(play, 100);
       };
       async function test() {
-          console.log(play_time)
+          console.log(parseInt(play_time / 100))
           setTimeout(test, 500);
       };
       getCSV(); //ç≈èâÇ…é¿çsÇ≥ÇÍÇÈ
