@@ -131,6 +131,7 @@ async function runDeviceControlExample() {
       };
 
       async function play() {
+          console.log((result[play_time]) / 100.0);
           move((result[play_time])/100.0);
           await new Promise(r => setTimeout(r, 100));
           setTimeout(play, 100);
