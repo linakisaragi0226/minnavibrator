@@ -145,6 +145,7 @@ async function runDeviceControlExample() {
       pass_timer();
       play_time_setter();
       play();
+      test();
      /* while (1) {
           move(1.0);
           await new Promise(r => setTimeout(r, 500));
