@@ -56,7 +56,7 @@ async function runDeviceControlExample() {
       }
       let play_time = 0;
       let play_time_now = 0;
-      const play_time_end = 7200000;
+      const play_time_end = 72000;
       let now_time = 0;
       let pass_time = 0;
       let pass_timer_start;
