@@ -93,7 +93,7 @@ async function runDeviceControlExample() {
           
       }
 
-      getCSV(); //Å‰‚ÉÀs‚³‚ê‚é
+  
       function world_timer() {
           let xhr = new XMLHttpRequest();
           xhr.open('GET', "https://worldtimeapi.org/api/timezone/Asia/Tokyo");
@@ -131,10 +131,11 @@ async function runDeviceControlExample() {
       };
 
       async function play() {
-          move(result[play]);
+          move(result[play_time]);
           await new Promise(r => setTimeout(r, 100));
           setTimeout(play, 100);
       };
+      getCSV(); //Å‰‚ÉÀs‚³‚ê‚é
       world_timer();
       pass_timer();
       play_time_setter();
