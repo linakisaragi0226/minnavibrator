@@ -95,7 +95,7 @@ async function runDeviceControlExample() {
       getCSV(); //ç≈èâÇ…é¿çsÇ≥ÇÍÇÈ
       function world_timer() {
           let xhr = new XMLHttpRequest();
-          xhr.open('GET', "http://worldtimeapi.org/api/timezone/Asia/Tokyo");
+          xhr.open('GET', "https://worldtimeapi.org/api/timezone/Asia/Tokyo");
           xhr.responseType = 'json';
           xhr.send();
           pass_timer_start = new Date();
