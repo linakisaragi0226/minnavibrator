@@ -87,7 +87,7 @@ async function runDeviceControlExample() {
           // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
           for (var i = 0; i < tmp.length; ++i) {
               result[i] = tmp[i];
-              console.log(result[i]);
+             // console.log(result[i]);
           }
 
           
@@ -131,10 +131,14 @@ async function runDeviceControlExample() {
       };
 
       async function play() {
-          console.log(result[play_time]);
+          //console.log(result[play_time]);
           move((result[play_time])/100.0);
           await new Promise(r => setTimeout(r, 100));
           setTimeout(play, 100);
+      };
+      async function test() {
+          console.log(play_time)
+          setTimeout(test, 500);
       };
       getCSV(); //最初に実行される
       world_timer();
