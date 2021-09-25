@@ -56,7 +56,7 @@ async function runDeviceControlExample() {
       }
       let play_time = 0;
       let play_time_now = 0;
-      const play_time_end = 72000;
+      const play_time_end = 7200000;
       let now_time = 0;
       let pass_time = 0;
       let pass_timer_start;
@@ -132,7 +132,7 @@ async function runDeviceControlExample() {
 
       async function play() {
           //console.log(result[play_time]);
-          move((result[play_time])/100.0);
+          move((result[play_time/100])/100.0);
           await new Promise(r => setTimeout(r, 100));
           setTimeout(play, 100);
       };
